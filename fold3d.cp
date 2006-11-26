@@ -28,21 +28,27 @@ static void	GuessLanguage( BBLMParamBlock &params )
 {
 	UInt32	theType = GetLanguageType( params );
 	
+#if DEBUG
 	std::printf("Fo3D: Does the text match the language %c%c%c%c? ",
 		(char)(params.fLanguage >> 24),
 		(char)(params.fLanguage >> 16),
 		(char)(params.fLanguage >> 8),
 		(char)(params.fLanguage) );
+#endif
 
 	if (theType == params.fLanguage)
 	{
 		params.fGuessLanguageParams.fGuessResult = kBBLMGuessDefiniteYes;
+#if DEBUG
 		std::printf("Yes\n");
+#endif
 	}
 	else
 	{
 		params.fGuessLanguageParams.fGuessResult = kBBLMGuessDefiniteNo;
+#if DEBUG
 		std::printf("No\n");
+#endif
 	}
 }
 
@@ -78,12 +84,14 @@ OSErr	FoldMain( BBLMParamBlock &params,
 		return paramErr;
 	}
 	
+#if DEBUG
 	std::printf("Fo3D: message %s for language %c%c%c%c\n",
 		LMMessageName(params.fMessage),
 		(char)(params.fLanguage >> 24),
 		(char)(params.fLanguage >> 16),
 		(char)(params.fLanguage >> 8),
 		(char)(params.fLanguage) );
+#endif
 	
 	switch (params.fMessage)
 	{
@@ -106,7 +114,9 @@ OSErr	FoldMain( BBLMParamBlock &params,
 			result = paramErr;
 			break;
 	}
+#if DEBUG
 	std::fflush(stdout);
+#endif
 	
 	return result;
 }

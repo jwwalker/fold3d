@@ -11,7 +11,7 @@
 
 #include "LMMessageName.h"
 
-
+#if DEBUG
 const char* LMMessageName( int inMessage )
 {
 	const char*	msgText = "Unknown";
@@ -93,3 +93,5 @@ const char* LMMessageName( int inMessage )
 	
 	return msgText;
 }
+#endif
+
