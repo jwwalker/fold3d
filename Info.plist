@@ -9,7 +9,7 @@
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string></string>
+	<string>com.jwwalker.fold3d</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
@@ -18,6 +18,8 @@
 	<string>BBLM</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0 ©James W. Walker</string>
 	<key>CSResourcesFileMapped</key>
 	<true/>
 	<key>com.barebones.bblminfo</key>
@@ -42,7 +44,95 @@
 			<key>BBLMScansForFoldRanges</key>
 			<true/>
 			<key>BBLMColorsSyntax</key>
-			<false/>
+			<true/>
+			<key>BBLMKeywordList</key>
+			<array>
+				<string>NULL</string>
+				<string>DEF</string>
+				<string>USE</string>
+				<string>PROTO</string>
+				<string>EXTERNPROTO</string>
+				<string>ROUTE</string>
+				<string>TRUE</string>
+				<string>FALSE</string>
+				<string>PROTO</string>
+
+				<string>Anchor</string>
+				<string>Appearance</string>
+				<string>AudioClip</string>
+				<string>Background</string>
+				<string>Billboard</string>
+				<string>Box</string>
+				<string>Collision</string>
+				<string>Color</string>
+				<string>ColorInterpolator</string>
+				<string>Cone</string>
+				<string>Coordinate</string>
+				<string>CoordinateInterpolator</string>
+				<string>Cylinder</string>
+				<string>CylinderSensor</string>
+				<string>DirectionalLight</string>
+				<string>ElevationGrid</string>
+				<string>Extrusion</string>
+				<string>Fog</string>
+				<string>FontStyle</string>
+				<string>Group</string>
+				<string>ImageTexture</string>
+				<string>IndexedFaceSet</string>
+				<string>IndexedLineSet</string>
+				<string>Inline</string>
+				<string>LOD</string>
+				<string>Material</string>
+				<string>MovieTexture</string>
+				<string>NavigationInfo</string>
+				<string>Normal</string>
+				<string>NormalInterpolator</string>
+				<string>OrientationInterpolator</string>
+				<string>PixelTexture</string>
+				<string>PlaneSensor</string>
+				<string>PointLight</string>
+				<string>PointSet</string>
+				<string>PositionInterpolator</string>
+				<string>ProximitySensor</string>
+				<string>ScalarInterpolator</string>
+				<string>Script</string>
+				<string>Shape</string>
+				<string>Sound</string>
+				<string>Sphere</string>
+				<string>SphereSensor</string>
+				<string>SpotLight</string>
+				<string>Switch</string>
+				<string>Text</string>
+				<string>TextureCoordinate</string>
+				<string>TextureTransform</string>
+				<string>TimeSensor</string>
+				<string>TouchSensor</string>
+				<string>Transform</string>
+				<string>Viewpoint</string>
+				<string>VisibilitySensor</string>
+				<string>WorldInfo</string>
+				
+				<!-- Node names used in VRML 1 but not VRML 2 -->
+				<string>AsciiText</string>
+				<string>Coordinate3</string>
+				<string>Cube</string>
+				<string>Info</string>
+				<string>MaterialBinding</string>
+				<string>MatrixTransform</string>
+				<string>NormalBinding</string>
+				<string>OrthographicCamera</string>
+				<string>PerspectiveCamera</string>
+				<string>Rotation</string>
+				<string>Scale</string>
+				<string>Separator</string>
+				<string>ShapeHints</string>
+				<string>Texture2</string>
+				<string>Texture2Transform</string>
+				<string>TextureCoordinate2</string>
+				<string>Translation</string>
+				<string>WWWAnchor</string>
+				<string>WWWInline</string>
+			</array>
 			<key>BBLMSuffixMap</key>
 			<array>
 				<dict>
@@ -63,7 +153,7 @@
 			<key>BBLMLanguageCode</key>
 			<string>3DMF</string>
 			<key>BBLMLanguageDisplayName</key>
-			<string>3DMF</string>
+			<string>3DMF (text)</string>
 			<key>BBLMMainFunctionName</key>
 			<string>FoldMain</string>
 			<key>BBLMScansFunctions</key>
@@ -73,7 +163,110 @@
 			<key>BBLMScansForFoldRanges</key>
 			<true/>
 			<key>BBLMColorsSyntax</key>
-			<false/>
+			<true/>
+			<key>BBLMKeywordList</key>
+			<array>
+				<string>TableOfContents</string>
+				<string>Reference</string>
+				<string>ExternalReference</string>
+				<string>Type</string>
+				<string>Container</string>
+				<string>CString</string>
+				<string>Unicode</string>
+				<string>Point</string>
+				<string>Line</string>
+				<string>Polyline</string>
+				<string>Triangle</string>
+				<string>Polygon</string>
+				<string>GeneralPolygon</string>
+				<string>GeneralPolygonHint</string>
+				<string>Box</string>
+				<string>TriGrid</string>
+				<string>Polyhedron</string>
+				<string>Mesh</string>
+				<string>MeshCorners</string>
+				<string>MeshEdges</string>
+				<string>TriMesh</string>
+				<string>AttributeArray</string>
+				<string>Ellipse</string>
+				<string>NURBCurve</string>
+				<string>NURBPatch</string>
+				<string>TrimLoop</string>
+				<string>Ellipsoid</string>
+				<string>Caps</string>
+				<string>Cylinder</string>
+				<string>Disk</string>
+				<string>Cone</string>
+				<string>Torus</string>
+				<string>Marker</string>
+				<string>DiffuseColor</string>
+				<string>SpecularColor</string>
+				<string>SpecularControl</string>
+				<string>TransparencyColor</string>
+				<string>SurfaceUV</string>
+				<string>ShadingUV</string>
+				<string>SurfaceTangent</string>
+				<string>Normal</string>
+				<string>AmbientCoefficient</string>
+				<string>HighlightState</string>
+				<string>AttributeSet</string>
+				<string>TopCapAttributeSet</string>
+				<string>BottomCapAttributeSet</string>
+				<string>FaceCapAttributeSet</string>
+				<string>GeometryAttributeSetList</string>
+				<string>FaceAttributeSetList</string>
+				<string>VertexAttributeSetList</string>
+				<string>BackfacingStyle</string>
+				<string>InterpolationStyle</string>
+				<string>FillStyle</string>
+				<string>HighlightStyle</string>
+				<string>SubdivisionStyle</string>
+				<string>OrientationStyle</string>
+				<string>ReceiveShadowsStyle</string>
+				<string>PickIDStyle</string>
+				<string>PickPartsStyle</string>
+				<string>Translate</string>
+				<string>Scale</string>
+				<string>Matrix</string>
+				<string>Rotate</string>
+				<string>RotateAboutPoint</string>
+				<string>RotateAboutAxis</string>
+				<string>Quaternion</string>
+				<string>ShaderTransform</string>
+				<string>ShaderUVTransform</string>
+				<string>LightData</string>
+				<string>AmbientLight</string>
+				<string>DirectionalLight</string>
+				<string>PointLight</string>
+				<string>SpotLight</string>
+				<string>CameraPlacement</string>
+				<string>CameraRange</string>
+				<string>CameraViewPort</string>
+				<string>OrthographicCamera</string>
+				<string>ViewPlaneCamera</string>
+				<string>ViewAngleAspectCamera</string>
+				<string>DisplayGroup</string>
+				<string>OrderedDisplayGroup</string>
+				<string>LightGroup</string>
+				<string>BeginGroup</string>
+				<string>EndGroup</string>
+				<string>IOProxyDisplayGroup</string>
+				<string>InfoGroup</string>
+				<string>Group</string>
+				<string>DisplayGroupState</string>
+				<string>WireFrame</string>
+				<string>InteractiveRenderer</string>
+				<string>GenericRenderer</string>
+				<string>Shader</string>
+				<string>TextureShader</string>
+				<string>PixmapTexture</string>
+				<string>ViewHints</string>
+				<string>ImageMask</string>
+				<string>ImageDimensions</string>
+				<string>ImageClearColor</string>
+				<string>UnknownText</string>
+				<string>UnknownBinary</string>
+			</array>
 			<key>BBLMSuffixMap</key>
 			<array>
 				<dict>
