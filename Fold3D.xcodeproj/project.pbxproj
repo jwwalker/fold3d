@@ -22,7 +22,7 @@
 /* Begin PBXFileReference section */
 		2E4853BA05A07363009789C1 /* fold3d.cp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = fold3d.cp; sourceTree = "<group>"; };
 		2EADE3EB056EA181004A4EFC /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
-		5F05134505A0957400BD0E76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F05134505A0957400BD0E76 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F05134605A0957400BD0E76 /* Fold3D.bblm */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fold3D.bblm; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE70408B0B18F44400F06E3D /* BBLMTextIterator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BBLMTextIterator.h; path = "Interfaces/Language Modules/BBLMTextIterator.h"; sourceTree = BBEdit_SDK; };
 		BE70408C0B18F44400F06E3D /* BBLMInterface.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BBLMInterface.h; path = "Interfaces/Language Modules/BBLMInterface.h"; sourceTree = BBEdit_SDK; };
