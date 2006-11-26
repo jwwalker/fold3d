@@ -14,9 +14,10 @@
 
 extern "C"
 {
-OSErr	FoldMain( BBLMParamBlock &params,
-			const BBLMCallbackBlock &bblmCallbacks,
-			const BBXTCallbackBlock &bbxtCallbacks);
+__attribute__((visibility("default")))
+	OSErr	FoldMain( BBLMParamBlock &params,
+				const BBLMCallbackBlock &bblmCallbacks,
+				const BBXTCallbackBlock &bbxtCallbacks);
 }
 
 
@@ -54,8 +55,6 @@ static void	GuessLanguage( BBLMParamBlock &params )
 
 #pragma mark -
 
-extern "C"
-{
 OSErr	FoldMain( BBLMParamBlock &params,
 			const BBLMCallbackBlock &bblmCallbacks,
 			const BBXTCallbackBlock &bbxtCallbacks)
@@ -119,6 +118,5 @@ OSErr	FoldMain( BBLMParamBlock &params,
 #endif
 	
 	return result;
-}
 }
 
