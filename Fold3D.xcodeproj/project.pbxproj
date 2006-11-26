@@ -135,9 +135,9 @@
 			productReference = 5F05134605A0957400BD0E76 /* Fold3D.bblm */;
 			productType = "com.apple.product-type.bundle";
 		};
-		BEBB34F40B197916000D1681 /* Into BBEdit */ = {
+		BEBB34F40B197916000D1681 /* Install */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BEBB34FF0B197916000D1681 /* Build configuration list for PBXNativeTarget "Into BBEdit" */;
+			buildConfigurationList = BEBB34FF0B197916000D1681 /* Build configuration list for PBXNativeTarget "Install" */;
 			buildPhases = (
 				BEBB34F50B197916000D1681 /* Headers */,
 				BEBB34F60B197916000D1681 /* Resources */,
@@ -149,7 +149,7 @@
 			);
 			dependencies = (
 			);
-			name = "Into BBEdit";
+			name = Install;
 			productInstallPath = "$(HOME)/Library/Bundles";
 			productName = "Hello World";
 			productReference = BEBB35020B197916000D1681 /* Fold3D.bblm */;
@@ -167,7 +167,7 @@
 			projectDirPath = "";
 			targets = (
 				5F05133905A0957400BD0E76 /* Fold3D */,
-				BEBB34F40B197916000D1681 /* Into BBEdit */,
+				BEBB34F40B197916000D1681 /* Install */,
 			);
 		};
 /* End PBXProject section */
@@ -268,14 +268,14 @@
 		BEBB35000B197916000D1681 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(HOME)/Applications/BBEdit.app/Contents/Language Modules";
+				CONFIGURATION_BUILD_DIR = "$(HOME)/Library/Application Support/BBEdit/Language Modules";
 			};
 			name = Debug;
 		};
 		BEBB35010B197916000D1681 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(HOME)/Applications/BBEdit.app/Contents/Language Modules";
+				CONFIGURATION_BUILD_DIR = "$(HOME)/Library/Application Support/BBEdit/Language Modules";
 			};
 			name = Release;
 		};
@@ -300,7 +300,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		BEBB34FF0B197916000D1681 /* Build configuration list for PBXNativeTarget "Into BBEdit" */ = {
+		BEBB34FF0B197916000D1681 /* Build configuration list for PBXNativeTarget "Install" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BEBB35000B197916000D1681 /* Debug */,
