@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 45;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,7 +31,6 @@
 		BEBB32A60B191A12000D1681 /* FindLanguageType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindLanguageType.h; sourceTree = "<group>"; };
 		BEBB32D90B191CBD000D1681 /* ScanForFolds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanForFolds.h; sourceTree = "<group>"; };
 		BEBB348E0B196E05000D1681 /* Fold3D.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Fold3D.xcconfig; sourceTree = "<group>"; };
-		BEBB35020B197916000D1681 /* Fold3D.bblm */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fold3D.bblm; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,13 +39,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE3F6D8D218E32BE00D285CF /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BEBB34FC0B197916000D1681 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +53,6 @@
 				2EADE40E056EA22B004A4EFC /* SDK Headers */,
 				5F05134505A0957400BD0E76 /* Info.plist */,
 				5F05134605A0957400BD0E76 /* Fold3D.bblm */,
-				BEBB35020B197916000D1681 /* Fold3D.bblm */,
 				BE3F6D8B218E32BD00D285CF /* Frameworks */,
 			);
 			name = "Hello World";
@@ -112,13 +103,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BEBB34F50B197916000D1681 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -142,26 +126,6 @@
 			productReference = 5F05134605A0957400BD0E76 /* Fold3D.bblm */;
 			productType = "com.apple.product-type.bundle";
 		};
-		BEBB34F40B197916000D1681 /* Install */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BEBB34FF0B197916000D1681 /* Build configuration list for PBXNativeTarget "Install" */;
-			buildPhases = (
-				BEBB34F50B197916000D1681 /* Headers */,
-				BEBB34F60B197916000D1681 /* Resources */,
-				BEBB34F70B197916000D1681 /* Sources */,
-				BEBB34FC0B197916000D1681 /* Frameworks */,
-				BEBB34FE0B197916000D1681 /* Rez */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Install;
-			productInstallPath = "$(HOME)/Library/Bundles";
-			productName = "Hello World";
-			productReference = BEBB35020B197916000D1681 /* Fold3D.bblm */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -182,7 +146,6 @@
 			projectRoot = "";
 			targets = (
 				5F05133905A0957400BD0E76 /* Fold3D */,
-				BEBB34F40B197916000D1681 /* Install */,
 			);
 		};
 /* End PBXProject section */
@@ -195,24 +158,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BEBB34F60B197916000D1681 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXRezBuildPhase section */
 		5F05134305A0957400BD0E76 /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BEBB34FE0B197916000D1681 /* Rez */ = {
 			isa = PBXRezBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -230,13 +179,6 @@
 				BE3F6D94218E8EEA00D285CF /* LMMessageName.mm in Sources */,
 				BE3F6D92218E8E9E00D285CF /* FindLanguageType.mm in Sources */,
 				BE3F6D8A218E326A00D285CF /* ScanForFolds.mm in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BEBB34F70B197916000D1681 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,20 +214,6 @@
 			};
 			name = Release;
 		};
-		BEBB35000B197916000D1681 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(HOME)/Library/Application Support/BBEdit/Language Modules";
-			};
-			name = Debug;
-		};
-		BEBB35010B197916000D1681 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(HOME)/Library/Application Support/BBEdit/Language Modules";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -303,15 +231,6 @@
 			buildConfigurations = (
 				2E4F91D20863164B009D6578 /* Debug */,
 				2E4F91D30863164B009D6578 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		BEBB34FF0B197916000D1681 /* Build configuration list for PBXNativeTarget "Install" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BEBB35000B197916000D1681 /* Debug */,
-				BEBB35010B197916000D1681 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

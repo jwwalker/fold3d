@@ -83,7 +83,7 @@ OSErr	FoldMain( BBLMParamBlock &params,
 	}
 	
 #if DEBUG
-	std::printf("Fo3D: message %s for language %c%c%c%c\n",
+	NSLog(@"Fo3D: message %s for language %c%c%c%c\n",
 		LMMessageName(params.fMessage),
 		(char)(params.fLanguage >> 24),
 		(char)(params.fLanguage >> 16),

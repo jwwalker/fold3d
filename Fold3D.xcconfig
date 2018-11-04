@@ -4,6 +4,7 @@ ARCHS = x86_64
 // Build Locations
 SDKROOT = macosx
 SYMROOT = $(SeparateBuilds)/Fold3D
+CONFIGURATION_BUILD_DIR = $(HOME)/Library/Application Support/BBEdit/Language Modules
 
 // Search Paths
 HEADER_SEARCH_PATHS = $(inherited) $(BBEdit_SDK)/Interfaces/**
@@ -21,6 +22,10 @@ ZERO_LINK = NO
 PRODUCT_NAME = Fold3D
 WRAPPER_EXTENSION = bblm
 INFOPLIST_FILE = Info.plist
+
+// Signing
+CODE_SIGN_IDENTITY = Developer ID Application: James Walker (FDHC2KMZ6V)
+CODE_SIGN_STYLE = Manual
 
 // Deployment
 MACOSX_DEPLOYMENT_TARGET = 10.7

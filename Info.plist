@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
@@ -27,15 +27,21 @@
 		<dict>
 			<key>BBLMCanGuessLanguage</key>
 			<true/>
-			<key>BBLMDroppedFilePathStyle</key>
-			<string>POSIX</string>
+			<key>BBLMCanGenerateHTMLForPreview</key>
+			<false/>
+			<key>BBLMFiltersRunsForSpellChecking</key>
+			<false/>
+			<key>BBLMSupportsCFStringKeywordLookups</key>
+			<false/>
 			<key>BBLMIsCaseSensitive</key>
 			<true/>
+			<key>BBLMCommentLineDefault</key>
+			<string>#</string>
 			<key>BBLMLanguageCode</key>
 			<string>Vrml</string>
 			<key>BBLMLanguageDisplayName</key>
 			<string>VRML</string>
-			<key>BBLMMainFunctionName</key>
+			<key>BBLMEntryPointName</key>
 			<string>FoldMain</string>
 			<key>BBLMScansFunctions</key>
 			<false/>
@@ -56,7 +62,6 @@
 				<string>TRUE</string>
 				<string>FALSE</string>
 				<string>PROTO</string>
-
 				<string>Anchor</string>
 				<string>Appearance</string>
 				<string>AudioClip</string>
@@ -111,8 +116,6 @@
 				<string>Viewpoint</string>
 				<string>VisibilitySensor</string>
 				<string>WorldInfo</string>
-				
-				<!-- Node names used in VRML 1 but not VRML 2 -->
 				<string>AsciiText</string>
 				<string>Coordinate3</string>
 				<string>Cube</string>
@@ -146,15 +149,19 @@
 		<dict>
 			<key>BBLMCanGuessLanguage</key>
 			<true/>
-			<key>BBLMDroppedFilePathStyle</key>
-			<string>POSIX</string>
+			<key>BBLMCanGenerateHTMLForPreview</key>
+			<false/>
+			<key>BBLMFiltersRunsForSpellChecking</key>
+			<false/>
+			<key>BBLMSupportsCFStringKeywordLookups</key>
+			<false/>
 			<key>BBLMIsCaseSensitive</key>
 			<true/>
 			<key>BBLMLanguageCode</key>
 			<string>3DMF</string>
 			<key>BBLMLanguageDisplayName</key>
 			<string>3DMF (text)</string>
-			<key>BBLMMainFunctionName</key>
+			<key>BBLMEntryPointName</key>
 			<string>FoldMain</string>
 			<key>BBLMScansFunctions</key>
 			<false/>
@@ -272,37 +279,6 @@
 				<dict>
 					<key>BBLMLanguageSuffix</key>
 					<string>.3dmf</string>
-				</dict>
-			</array>
-			<key>BBLMUseHTMLFileSearchRules</key>
-			<false/>
-		</dict>
-		<dict>
-			<key>BBLMCanGuessLanguage</key>
-			<true/>
-			<key>BBLMDroppedFilePathStyle</key>
-			<string>POSIX</string>
-			<key>BBLMIsCaseSensitive</key>
-			<true/>
-			<key>BBLMLanguageCode</key>
-			<string>DirX</string>
-			<key>BBLMLanguageDisplayName</key>
-			<string>DirectX Object</string>
-			<key>BBLMMainFunctionName</key>
-			<string>FoldMain</string>
-			<key>BBLMScansFunctions</key>
-			<false/>
-			<key>BBLMFunctionScannerDoesFoldsToo</key>
-			<false/>
-			<key>BBLMScansForFoldRanges</key>
-			<true/>
-			<key>BBLMColorsSyntax</key>
-			<false/>
-			<key>BBLMSuffixMap</key>
-			<array>
-				<dict>
-					<key>BBLMLanguageSuffix</key>
-					<string>.X</string>
 				</dict>
 			</array>
 			<key>BBLMUseHTMLFileSearchRules</key>
