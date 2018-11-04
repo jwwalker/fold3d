@@ -7,32 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5F05134005A0957400BD0E76 /* fold3d.cp in Sources */ = {isa = PBXBuildFile; fileRef = 2E4853BA05A07363009789C1 /* fold3d.cp */; };
-		5F05134205A0957400BD0E76 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EADE3EB056EA181004A4EFC /* Carbon.framework */; };
-		BEBB33C70B193178000D1681 /* LMMessageName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEBB328A0B191694000D1681 /* LMMessageName.cpp */; };
-		BEBB33FE0B193CCA000D1681 /* ScanForFolds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEBB32DA0B191CBD000D1681 /* ScanForFolds.cpp */; };
-		BEBB33FF0B193CCD000D1681 /* FindLanguageType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEBB32A70B191A12000D1681 /* FindLanguageType.cpp */; };
-		BEBB34F80B197916000D1681 /* fold3d.cp in Sources */ = {isa = PBXBuildFile; fileRef = 2E4853BA05A07363009789C1 /* fold3d.cp */; };
-		BEBB34F90B197916000D1681 /* LMMessageName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEBB328A0B191694000D1681 /* LMMessageName.cpp */; };
-		BEBB34FA0B197916000D1681 /* ScanForFolds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEBB32DA0B191CBD000D1681 /* ScanForFolds.cpp */; };
-		BEBB34FB0B197916000D1681 /* FindLanguageType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEBB32A70B191A12000D1681 /* FindLanguageType.cpp */; };
-		BEBB34FD0B197916000D1681 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EADE3EB056EA181004A4EFC /* Carbon.framework */; };
+		BE3F6D8A218E326A00D285CF /* ScanForFolds.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE3F6D89218E326A00D285CF /* ScanForFolds.mm */; };
+		BE3F6D8D218E32BE00D285CF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3F6D8C218E32BE00D285CF /* Cocoa.framework */; };
+		BE3F6D90218E331000D285CF /* fold3d.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE3F6D8F218E331000D285CF /* fold3d.mm */; };
+		BE3F6D92218E8E9E00D285CF /* FindLanguageType.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE3F6D91218E8E9E00D285CF /* FindLanguageType.mm */; };
+		BE3F6D94218E8EEA00D285CF /* LMMessageName.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE3F6D93218E8EEA00D285CF /* LMMessageName.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2E4853BA05A07363009789C1 /* fold3d.cp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = fold3d.cp; sourceTree = "<group>"; };
-		2EADE3EB056EA181004A4EFC /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
-		5F05134505A0957400BD0E76 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F05134505A0957400BD0E76 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F05134605A0957400BD0E76 /* Fold3D.bblm */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fold3D.bblm; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE70408B0B18F44400F06E3D /* BBLMTextIterator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BBLMTextIterator.h; path = "Interfaces/Language Modules/BBLMTextIterator.h"; sourceTree = BBEdit_SDK; };
-		BE70408C0B18F44400F06E3D /* BBLMInterface.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BBLMInterface.h; path = "Interfaces/Language Modules/BBLMInterface.h"; sourceTree = BBEdit_SDK; };
-		BE7040940B18F49100F06E3D /* BBXTInterface.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BBXTInterface.h; path = Interfaces/Tools/BBXTInterface.h; sourceTree = BBEdit_SDK; };
+		BE3F6D84218E0CF000D285CF /* BBLMInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBLMInterface.h; sourceTree = "<group>"; };
+		BE3F6D85218E0CF000D285CF /* BBLMToken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBLMToken.h; sourceTree = "<group>"; };
+		BE3F6D86218E0CF000D285CF /* BBLMTextUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BBLMTextUtils.mm; sourceTree = "<group>"; };
+		BE3F6D87218E0CF000D285CF /* BBLMTextUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBLMTextUtils.h; sourceTree = "<group>"; };
+		BE3F6D88218E0CF000D285CF /* BBLMTextIterator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBLMTextIterator.h; sourceTree = "<group>"; };
+		BE3F6D89218E326A00D285CF /* ScanForFolds.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ScanForFolds.mm; sourceTree = "<group>"; };
+		BE3F6D8C218E32BE00D285CF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BE3F6D8F218E331000D285CF /* fold3d.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = fold3d.mm; sourceTree = "<group>"; };
+		BE3F6D91218E8E9E00D285CF /* FindLanguageType.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FindLanguageType.mm; sourceTree = "<group>"; };
+		BE3F6D93218E8EEA00D285CF /* LMMessageName.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LMMessageName.mm; sourceTree = "<group>"; };
 		BEBB32890B191694000D1681 /* LMMessageName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMMessageName.h; sourceTree = "<group>"; };
-		BEBB328A0B191694000D1681 /* LMMessageName.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LMMessageName.cpp; sourceTree = "<group>"; };
 		BEBB32A60B191A12000D1681 /* FindLanguageType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindLanguageType.h; sourceTree = "<group>"; };
-		BEBB32A70B191A12000D1681 /* FindLanguageType.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FindLanguageType.cpp; sourceTree = "<group>"; };
 		BEBB32D90B191CBD000D1681 /* ScanForFolds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanForFolds.h; sourceTree = "<group>"; };
-		BEBB32DA0B191CBD000D1681 /* ScanForFolds.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScanForFolds.cpp; sourceTree = "<group>"; };
 		BEBB348E0B196E05000D1681 /* Fold3D.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Fold3D.xcconfig; sourceTree = "<group>"; };
 		BEBB35020B197916000D1681 /* Fold3D.bblm */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fold3D.bblm; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -42,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F05134205A0957400BD0E76 /* Carbon.framework in Frameworks */,
+				BE3F6D8D218E32BE00D285CF /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,7 +47,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEBB34FD0B197916000D1681 /* Carbon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,10 +59,10 @@
 				BEBB348E0B196E05000D1681 /* Fold3D.xcconfig */,
 				08FB77ADFE841716C02AAC07 /* Source */,
 				2EADE40E056EA22B004A4EFC /* SDK Headers */,
-				2EADE3EB056EA181004A4EFC /* Carbon.framework */,
 				5F05134505A0957400BD0E76 /* Info.plist */,
 				5F05134605A0957400BD0E76 /* Fold3D.bblm */,
 				BEBB35020B197916000D1681 /* Fold3D.bblm */,
+				BE3F6D8B218E32BD00D285CF /* Frameworks */,
 			);
 			name = "Hello World";
 			sourceTree = "<group>";
@@ -74,13 +70,13 @@
 		08FB77ADFE841716C02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				2E4853BA05A07363009789C1 /* fold3d.cp */,
+				BE3F6D8F218E331000D285CF /* fold3d.mm */,
 				BEBB32D90B191CBD000D1681 /* ScanForFolds.h */,
-				BEBB32DA0B191CBD000D1681 /* ScanForFolds.cpp */,
+				BE3F6D89218E326A00D285CF /* ScanForFolds.mm */,
 				BEBB32890B191694000D1681 /* LMMessageName.h */,
-				BEBB328A0B191694000D1681 /* LMMessageName.cpp */,
+				BE3F6D93218E8EEA00D285CF /* LMMessageName.mm */,
 				BEBB32A60B191A12000D1681 /* FindLanguageType.h */,
-				BEBB32A70B191A12000D1681 /* FindLanguageType.cpp */,
+				BE3F6D91218E8E9E00D285CF /* FindLanguageType.mm */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -88,11 +84,22 @@
 		2EADE40E056EA22B004A4EFC /* SDK Headers */ = {
 			isa = PBXGroup;
 			children = (
-				BE7040940B18F49100F06E3D /* BBXTInterface.h */,
-				BE70408B0B18F44400F06E3D /* BBLMTextIterator.h */,
-				BE70408C0B18F44400F06E3D /* BBLMInterface.h */,
+				BE3F6D84218E0CF000D285CF /* BBLMInterface.h */,
+				BE3F6D88218E0CF000D285CF /* BBLMTextIterator.h */,
+				BE3F6D87218E0CF000D285CF /* BBLMTextUtils.h */,
+				BE3F6D86218E0CF000D285CF /* BBLMTextUtils.mm */,
+				BE3F6D85218E0CF000D285CF /* BBLMToken.h */,
 			);
 			name = "SDK Headers";
+			path = Interfaces;
+			sourceTree = BBEdit_SDK;
+		};
+		BE3F6D8B218E32BD00D285CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE3F6D8C218E32BE00D285CF /* Cocoa.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,11 +167,19 @@
 /* Begin PBXProject section */
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 2E4F91D10863164B009D6578 /* Build configuration list for PBXProject "Fold3D" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 089C166AFE841209C02AAC07 /* Hello World */;
 			productRefGroup = 089C166AFE841209C02AAC07 /* Hello World */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 				5F05133905A0957400BD0E76 /* Fold3D */,
 				BEBB34F40B197916000D1681 /* Install */,
@@ -211,10 +226,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F05134005A0957400BD0E76 /* fold3d.cp in Sources */,
-				BEBB33C70B193178000D1681 /* LMMessageName.cpp in Sources */,
-				BEBB33FE0B193CCA000D1681 /* ScanForFolds.cpp in Sources */,
-				BEBB33FF0B193CCD000D1681 /* FindLanguageType.cpp in Sources */,
+				BE3F6D90218E331000D285CF /* fold3d.mm in Sources */,
+				BE3F6D94218E8EEA00D285CF /* LMMessageName.mm in Sources */,
+				BE3F6D92218E8E9E00D285CF /* FindLanguageType.mm in Sources */,
+				BE3F6D8A218E326A00D285CF /* ScanForFolds.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,10 +237,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEBB34F80B197916000D1681 /* fold3d.cp in Sources */,
-				BEBB34F90B197916000D1681 /* LMMessageName.cpp in Sources */,
-				BEBB34FA0B197916000D1681 /* ScanForFolds.cpp in Sources */,
-				BEBB34FB0B197916000D1681 /* FindLanguageType.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,10 +268,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BEBB348E0B196E05000D1681 /* Fold3D.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 			};
 			name = Release;

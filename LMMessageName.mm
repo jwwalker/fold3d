@@ -42,20 +42,20 @@ const char* LMMessageName( int inMessage )
 			msgText = "AdjustEnd";
 			break;
 
-		case kBBLMMapColorCodeToColorMessage:
-			msgText = "MapColorCodeToColor";
+		//case kBBLMMapColorCodeToColorMessage:
+		//	msgText = "MapColorCodeToColor";
 			break;
 
-		case kBBLMMapRunKindToColorCodeMessage:
-			msgText = "MapRunKindToColorCode";
+		//case kBBLMMapRunKindToColorCodeMessage:
+		//	msgText = "MapRunKindToColorCode";
 			break;
 
 		case kBBLMSetCategoriesMessage:
 			msgText = "SetCategories";
 			break;
 
-		case kBBLMMatchKeywordMessage:
-			msgText = "MatchKeyword";
+		//case kBBLMMatchKeywordMessage:
+		//	msgText = "MatchKeyword";
 			break;
 
 		case kBBLMEscapeStringMessage:
@@ -82,7 +82,7 @@ const char* LMMessageName( int inMessage )
 			msgText = "CanSpellCheckRun";
 			break;
 
-		case kBBLMMatchKeywordWithCFStringMessage:
+		case kBBLMRunKindForWordMessage:
 			msgText = "MatchKeywordWithCFString";
 			break;
 

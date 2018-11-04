@@ -1,6 +1,9 @@
+// Architectures
+ARCHS = x86_64
+
 // Build Locations
-SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk
-SYMROOT = ../../build
+SDKROOT = macosx
+SYMROOT = $(SeparateBuilds)/Fold3D
 
 // Search Paths
 HEADER_SEARCH_PATHS = $(inherited) $(BBEdit_SDK)/Interfaces/**
@@ -20,7 +23,7 @@ WRAPPER_EXTENSION = bblm
 INFOPLIST_FILE = Info.plist
 
 // Deployment
-MACOSX_DEPLOYMENT_TARGET = 10.3
+MACOSX_DEPLOYMENT_TARGET = 10.7
 INSTALL_PATH = "$(HOME)/Applications/BBEdit.app/Contents/Language Modules/"
 INSTALL_MODE_FLAG = ug+w,o-w,a+rX
 COPY_PHASE_STRIP = NO
@@ -28,6 +31,10 @@ COPY_PHASE_STRIP = NO
 // Code Generation
 GCC_SYMBOLS_PRIVATE_EXTERN = YES
 GCC_INLINES_ARE_PRIVATE_EXTERN = YES
+
+// Language
+CLANG_CXX_LANGUAGE_STANDARD = gnu++0x
+CLANG_CXX_LIBRARY = libc++
 
 // Warnings
 GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES

@@ -1,5 +1,5 @@
 /*
- *  ScanForFolds.cpp
+ *  ScanForFolds.mm
  *  Fold3D
  *
  *  Created by James Walker on 11/25/06.
@@ -8,6 +8,8 @@
  */
 
 #include "ScanForFolds.h"
+
+#import <Cocoa/Cocoa.h>
 
 #include "BBLMTextIterator.h"
 #include "FindLanguageType.h"

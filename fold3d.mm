@@ -1,9 +1,10 @@
 #include <string.h>
 
 #include <Carbon/Carbon.h>
+#import <Cocoa/Cocoa.h>
 
 #include "BBLMInterface.h"
-#include "BBXTInterface.h"
+//#include "BBXTInterface.h"
 #include "BBLMTextIterator.h"
 
 #include "FindLanguageType.h"
@@ -16,8 +17,7 @@ extern "C"
 {
 __attribute__((visibility("default")))
 	OSErr	FoldMain( BBLMParamBlock &params,
-				const BBLMCallbackBlock &bblmCallbacks,
-				const BBXTCallbackBlock &bbxtCallbacks);
+				const BBLMCallbackBlock &bblmCallbacks);
 }
 
 
@@ -56,8 +56,7 @@ static void	GuessLanguage( BBLMParamBlock &params )
 #pragma mark -
 
 OSErr	FoldMain( BBLMParamBlock &params,
-			const BBLMCallbackBlock &bblmCallbacks,
-			const BBXTCallbackBlock &bbxtCallbacks)
+			const BBLMCallbackBlock &bblmCallbacks )
 {
 	OSErr	result = paramErr;
 	
