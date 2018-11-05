@@ -83,7 +83,7 @@ const char* LMMessageName( int inMessage )
 			break;
 
 		case kBBLMRunKindForWordMessage:
-			msgText = "MatchKeywordWithCFString";
+			msgText = "kBBLMRunKindForWordMessage";
 			break;
 
 		case kBBLMScanSubrangeForFunctionsMessage:

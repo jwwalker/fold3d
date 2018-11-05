@@ -12,6 +12,8 @@
 		BE3F6D90218E331000D285CF /* fold3d.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE3F6D8F218E331000D285CF /* fold3d.mm */; };
 		BE3F6D92218E8E9E00D285CF /* FindLanguageType.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE3F6D91218E8E9E00D285CF /* FindLanguageType.mm */; };
 		BE3F6D94218E8EEA00D285CF /* LMMessageName.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE3F6D93218E8EEA00D285CF /* LMMessageName.mm */; };
+		BE3F6D97218F605300D285CF /* CalculateRuns.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE3F6D95218F605300D285CF /* CalculateRuns.mm */; };
+		BE3F6D98218F605300D285CF /* CalculateRuns.h in Headers */ = {isa = PBXBuildFile; fileRef = BE3F6D96218F605300D285CF /* CalculateRuns.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		BE3F6D8F218E331000D285CF /* fold3d.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = fold3d.mm; sourceTree = "<group>"; };
 		BE3F6D91218E8E9E00D285CF /* FindLanguageType.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FindLanguageType.mm; sourceTree = "<group>"; };
 		BE3F6D93218E8EEA00D285CF /* LMMessageName.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LMMessageName.mm; sourceTree = "<group>"; };
+		BE3F6D95218F605300D285CF /* CalculateRuns.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CalculateRuns.mm; sourceTree = "<group>"; };
+		BE3F6D96218F605300D285CF /* CalculateRuns.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculateRuns.h; sourceTree = "<group>"; };
 		BEBB32890B191694000D1681 /* LMMessageName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMMessageName.h; sourceTree = "<group>"; };
 		BEBB32A60B191A12000D1681 /* FindLanguageType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindLanguageType.h; sourceTree = "<group>"; };
 		BEBB32D90B191CBD000D1681 /* ScanForFolds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanForFolds.h; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 			isa = PBXGroup;
 			children = (
 				BE3F6D8F218E331000D285CF /* fold3d.mm */,
+				BE3F6D95218F605300D285CF /* CalculateRuns.mm */,
+				BE3F6D96218F605300D285CF /* CalculateRuns.h */,
 				BEBB32D90B191CBD000D1681 /* ScanForFolds.h */,
 				BE3F6D89218E326A00D285CF /* ScanForFolds.mm */,
 				BEBB32890B191694000D1681 /* LMMessageName.h */,
@@ -100,6 +106,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE3F6D98218F605300D285CF /* CalculateRuns.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +185,7 @@
 				BE3F6D90218E331000D285CF /* fold3d.mm in Sources */,
 				BE3F6D94218E8EEA00D285CF /* LMMessageName.mm in Sources */,
 				BE3F6D92218E8E9E00D285CF /* FindLanguageType.mm in Sources */,
+				BE3F6D97218F605300D285CF /* CalculateRuns.mm in Sources */,
 				BE3F6D8A218E326A00D285CF /* ScanForFolds.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

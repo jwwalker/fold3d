@@ -10,6 +10,7 @@
 #include "FindLanguageType.h"
 #include "LMMessageName.h"
 #include "ScanForFolds.h"
+#import "CalculateRuns.h"
 
 #include <cstdio>
 
@@ -58,7 +59,7 @@ static void	GuessLanguage( BBLMParamBlock &params )
 OSErr	FoldMain( BBLMParamBlock &params,
 			const BBLMCallbackBlock &bblmCallbacks )
 {
-	OSErr	result = paramErr;
+	OSErr	result = noErr;
 	
 	//
 	//	a language module must always make sure that the parameter block
@@ -83,7 +84,7 @@ OSErr	FoldMain( BBLMParamBlock &params,
 	}
 	
 #if DEBUG
-	NSLog(@"Fo3D: message %s for language %c%c%c%c\n",
+	NSLog(@"Fold3D: message %s for language %c%c%c%c\n",
 		LMMessageName(params.fMessage),
 		(char)(params.fLanguage >> 24),
 		(char)(params.fLanguage >> 16),
@@ -95,26 +96,27 @@ OSErr	FoldMain( BBLMParamBlock &params,
 	{
 		case kBBLMInitMessage:
 		case kBBLMDisposeMessage:
-			result = noErr;	// nothing to do
 			break;
 		
 		case kBBLMScanForFoldRangesMessage:
 			ScanForFolds( params, bblmCallbacks );
-			result = noErr;
 			break;
 	
 		case kBBLMGuessLanguageMessage:
 			GuessLanguage( params );
-			result = noErr;
+			break;
+		
+		case kBBLMCalculateRunsMessage:
+			CalculateRuns( params, bblmCallbacks );
+			break;
+		
+		case kBBLMAdjustRangeMessage:
 			break;
 			
 		default:
-			result = paramErr;
+			result = userCanceledErr;
 			break;
 	}
-#if DEBUG
-	std::fflush(stdout);
-#endif
 	
 	return result;
 }

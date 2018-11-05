@@ -41,6 +41,8 @@
 			<string>Vrml</string>
 			<key>BBLMLanguageDisplayName</key>
 			<string>VRML</string>
+			<key>BBLMSupportsWordLookup</key>
+			<false/>
 			<key>BBLMEntryPointName</key>
 			<string>FoldMain</string>
 			<key>BBLMScansFunctions</key>
@@ -161,6 +163,8 @@
 			<string>3DMF</string>
 			<key>BBLMLanguageDisplayName</key>
 			<string>3DMF (text)</string>
+			<key>BBLMSupportsWordLookup</key>
+			<false/>
 			<key>BBLMEntryPointName</key>
 			<string>FoldMain</string>
 			<key>BBLMScansFunctions</key>
