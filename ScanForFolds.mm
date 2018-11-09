@@ -36,6 +36,7 @@ private:
 	void						CheckLanguage();
 	bool						IsGroupStart( UniChar inChar );
 	bool						IsGroupEnd( UniChar inChar );
+	UniChar						EndForStart( UniChar inChar );
 	
 	BBLMParamBlock&				mParams;
 	const BBLMCallbackBlock&	mLMCallbacks;
@@ -50,6 +51,7 @@ private:
 	EState						mState;
 	int32_t						mLineStart;
 	std::vector<int32_t>		mGroupStarts;
+	std::vector<UniChar>		mGroupEndChars;
 };
 
 FoldScanner::FoldScanner( BBLMParamBlock &params,
@@ -67,6 +69,27 @@ bool	FoldScanner::IsGroupStart( UniChar inChar )
 	return (mPairParentheses and (inChar == '(')) or
 		(mPairBraces and (inChar == '{')) or
 		(mPairBrackets and (inChar == '['));
+}
+
+UniChar		FoldScanner::EndForStart( UniChar inChar )
+{
+	UniChar theEnd = 0;
+	switch (inChar)
+	{
+		case '(':
+			theEnd = ')';
+			break;
+			
+		case '[':
+			theEnd = ']';
+			break;
+			
+		case '{':
+			theEnd = '}';
+			break;
+	}
+	
+	return theEnd;
 }
 
 bool	FoldScanner::IsGroupEnd( UniChar inChar )
@@ -117,13 +140,15 @@ void	FoldScanner::Scan()
 				else if (IsGroupStart( theChar ))
 				{
 					mGroupStarts.push_back( iter.Offset() );
+					mGroupEndChars.push_back( EndForStart( theChar ) );
 				}
-				else if (IsGroupEnd( theChar ))
+				else if ( (not mGroupEndChars.empty()) and (theChar == mGroupEndChars.back()) )
 				{
 					if (not mGroupStarts.empty())
 					{
 						int32_t	startOff = mGroupStarts.back();
 						mGroupStarts.pop_back();
+						mGroupEndChars.pop_back();
 						if (startOff < mLineStart)
 						{
 							bblmAddFoldRange( &mLMCallbacks, startOff,

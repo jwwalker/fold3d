@@ -84,12 +84,16 @@ OSErr	FoldMain( BBLMParamBlock &params,
 	}
 	
 #if DEBUG
-	NSLog(@"Fold3D: message %s for language %c%c%c%c\n",
-		LMMessageName(params.fMessage),
-		(char)(params.fLanguage >> 24),
-		(char)(params.fLanguage >> 16),
-		(char)(params.fLanguage >> 8),
-		(char)(params.fLanguage) );
+	if (params.fMessage != kBBLMRunKindForWordMessage)
+	{
+		NSLog(@"Fold3D: message %s for language %c%c%c%c, length %d",
+			LMMessageName(params.fMessage),
+			(char)(params.fLanguage >> 24),
+			(char)(params.fLanguage >> 16),
+			(char)(params.fLanguage >> 8),
+			(char)(params.fLanguage),
+			(int)params.fTextLength );
+	}
 #endif
 	
 	switch (params.fMessage)
@@ -111,6 +115,19 @@ OSErr	FoldMain( BBLMParamBlock &params,
 			break;
 		
 		case kBBLMAdjustRangeMessage:
+		#if DEBUG
+			NSLog(@"Adjust range (%d, %d) origStart %d, kind %@",
+				(int)params.fAdjustRangeParams.fStartIndex,
+				(int)params.fAdjustRangeParams.fEndIndex,
+				(int)params.fAdjustRangeParams.fOrigStartIndex,
+				params.fAdjustRangeParams.fOrigStartRun.runKind );
+		#endif
+			break;
+		
+		case kBBLMAdjustEndMessage:
+		#if DEBUG
+			NSLog(@"Adjust end %d", (int)params.fAdjustEndParams.fEndOffset );
+		#endif
 			break;
 			
 		default:
