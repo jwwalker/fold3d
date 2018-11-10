@@ -4,7 +4,6 @@
 #import <Cocoa/Cocoa.h>
 
 #include "BBLMInterface.h"
-//#include "BBXTInterface.h"
 #include "BBLMTextIterator.h"
 
 #include "FindLanguageType.h"
@@ -30,27 +29,21 @@ static void	GuessLanguage( BBLMParamBlock &params )
 {
 	UInt32	theType = GetLanguageType( params );
 	
-#if DEBUG
-	std::printf("Fo3D: Does the text match the language %c%c%c%c? ",
+	DEBUG_LOG(@"Fo3D: Does the text match the language %c%c%c%c? ",
 		(char)(params.fLanguage >> 24),
 		(char)(params.fLanguage >> 16),
 		(char)(params.fLanguage >> 8),
 		(char)(params.fLanguage) );
-#endif
 
 	if (theType == params.fLanguage)
 	{
 		params.fGuessLanguageParams.fGuessResult = kBBLMGuessDefiniteYes;
-#if DEBUG
-		std::printf("Yes\n");
-#endif
+		DEBUG_LOG(@"Yes");
 	}
 	else
 	{
 		params.fGuessLanguageParams.fGuessResult = kBBLMGuessDefiniteNo;
-#if DEBUG
-		std::printf("No\n");
-#endif
+		DEBUG_LOG(@"No");
 	}
 }
 
@@ -86,7 +79,7 @@ OSErr	FoldMain( BBLMParamBlock &params,
 #if DEBUG
 	if (params.fMessage != kBBLMRunKindForWordMessage)
 	{
-		NSLog(@"Fold3D: message %s for language %c%c%c%c, length %d",
+		DEBUG_LOG(@"Fold3D: message %s for language %c%c%c%c, length %d",
 			LMMessageName(params.fMessage),
 			(char)(params.fLanguage >> 24),
 			(char)(params.fLanguage >> 16),
@@ -115,19 +108,15 @@ OSErr	FoldMain( BBLMParamBlock &params,
 			break;
 		
 		case kBBLMAdjustRangeMessage:
-		#if DEBUG
-			NSLog(@"Adjust range (%d, %d) origStart %d, kind %@",
+			DEBUG_LOG(@"Adjust range (%d, %d) origStart %d, kind %@",
 				(int)params.fAdjustRangeParams.fStartIndex,
 				(int)params.fAdjustRangeParams.fEndIndex,
 				(int)params.fAdjustRangeParams.fOrigStartIndex,
 				params.fAdjustRangeParams.fOrigStartRun.runKind );
-		#endif
 			break;
 		
 		case kBBLMAdjustEndMessage:
-		#if DEBUG
-			NSLog(@"Adjust end %d", (int)params.fAdjustEndParams.fEndOffset );
-		#endif
+			DEBUG_LOG(@"Adjust end %d", (int)params.fAdjustEndParams.fEndOffset );
 			break;
 			
 		default:

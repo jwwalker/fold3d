@@ -31,6 +31,7 @@
 		BE3F6D93218E8EEA00D285CF /* LMMessageName.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LMMessageName.mm; sourceTree = "<group>"; };
 		BE3F6D95218F605300D285CF /* CalculateRuns.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CalculateRuns.mm; sourceTree = "<group>"; };
 		BE3F6D96218F605300D285CF /* CalculateRuns.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculateRuns.h; sourceTree = "<group>"; };
+		BE3F6D992197524300D285CF /* prefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = prefix.h; sourceTree = "<group>"; };
 		BEBB32890B191694000D1681 /* LMMessageName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMMessageName.h; sourceTree = "<group>"; };
 		BEBB32A60B191A12000D1681 /* FindLanguageType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindLanguageType.h; sourceTree = "<group>"; };
 		BEBB32D90B191CBD000D1681 /* ScanForFolds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanForFolds.h; sourceTree = "<group>"; };
@@ -65,6 +66,7 @@
 		08FB77ADFE841716C02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				BE3F6D992197524300D285CF /* prefix.h */,
 				BE3F6D8F218E331000D285CF /* fold3d.mm */,
 				BE3F6D95218F605300D285CF /* CalculateRuns.mm */,
 				BE3F6D96218F605300D285CF /* CalculateRuns.h */,

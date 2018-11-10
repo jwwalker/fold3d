@@ -28,7 +28,7 @@ void CalculateRuns( BBLMParamBlock &params,
 	int32_t end = start;
 	RunKind runKind = RunKind::normal;
 	bool prevWasBackslash = false;
-	NSLog(@"CalculateRuns starting at %d, current run count %d", start,
+	DEBUG_LOG(@"CalculateRuns starting at %d, current run count %d", start,
 		bblmRunCount( &bblmCallbacks ));
 	
 	while (p.InBounds())
@@ -43,7 +43,7 @@ void CalculateRuns( BBLMParamBlock &params,
 					end = p.Offset() - 1;
 					if (end > start)
 					{
-						NSLog(@"Code run %d to %d", (int)start, (int)end );
+						DEBUG_LOG(@"Code run %d to %d", (int)start, (int)end );
 						if (not bblmAddRun( &bblmCallbacks, params.fLanguage,
 							kBBLMCodeRunKind, start, end - start ))
 						{
@@ -59,7 +59,7 @@ void CalculateRuns( BBLMParamBlock &params,
 					end = p.Offset() - 1;
 					if (end > start)
 					{
-						NSLog(@"Code run %d to %d", (int)start, (int)end );
+						DEBUG_LOG(@"Code run %d to %d", (int)start, (int)end );
 						if (not bblmAddRun( &bblmCallbacks, params.fLanguage,
 							kBBLMCodeRunKind, start, end - start ))
 						{
@@ -97,7 +97,7 @@ void CalculateRuns( BBLMParamBlock &params,
 						{
 							return;
 						}
-						NSLog(@"Quoted string run %d to %d", (int)start, (int)end );
+						DEBUG_LOG(@"Quoted string run %d to %d", (int)start, (int)end );
 						start = end;
 						runKind = RunKind::normal;
 					}
@@ -117,7 +117,7 @@ void CalculateRuns( BBLMParamBlock &params,
 					{
 						return;
 					}
-					NSLog(@"Comment string run %d to %d", (int)start, (int)end );
+					DEBUG_LOG(@"Comment string run %d to %d", (int)start, (int)end );
 					start = end;
 					runKind = RunKind::normal;
 				}
@@ -133,17 +133,17 @@ void CalculateRuns( BBLMParamBlock &params,
 		{
 			case RunKind::normal:
 				lastRunKind = kBBLMCodeRunKind;
-				NSLog(@"Final code run %d to %d", (int)start, (int)end );
+				DEBUG_LOG(@"Final code run %d to %d", (int)start, (int)end );
 				break;
 				
 			case RunKind::quoted:
 				lastRunKind = kBBLMDoubleQuotedStringRunKind;
-				NSLog(@"Final quoted string run %d to %d", (int)start, (int)end );
+				DEBUG_LOG(@"Final quoted string run %d to %d", (int)start, (int)end );
 				break;
 			
 			case RunKind::comment:
 				lastRunKind = kBBLMCommentRunKind;
-				NSLog(@"Final comment run %d to %d", (int)start, (int)end );
+				DEBUG_LOG(@"Final comment run %d to %d", (int)start, (int)end );
 				break;
 		}
 		bblmAddRun( &bblmCallbacks, params.fLanguage,
