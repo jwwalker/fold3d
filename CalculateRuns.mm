@@ -18,6 +18,11 @@ enum class RunKind
 	comment
 };
 
+class RunCalculator
+{
+	
+};
+
 
 void CalculateRuns( BBLMParamBlock &params,
 			const BBLMCallbackBlock &bblmCallbacks )

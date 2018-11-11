@@ -17,9 +17,9 @@
 	<key>CFBundleSignature</key>
 	<string>BBLM</string>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0 ©2006 James W. Walker</string>
+	<string>1.1 ©2006 James W. Walker</string>
 	<key>CSResourcesFileMapped</key>
 	<true/>
 	<key>com.barebones.bblminfo</key>
@@ -30,7 +30,7 @@
 			<key>BBLMCanGenerateHTMLForPreview</key>
 			<false/>
 			<key>BBLMFiltersRunsForSpellChecking</key>
-			<false/>
+			<true/>
 			<key>BBLMSupportsCFStringKeywordLookups</key>
 			<false/>
 			<key>BBLMIsCaseSensitive</key>
@@ -147,6 +147,17 @@
 			</array>
 			<key>BBLMUseHTMLFileSearchRules</key>
 			<false/>
+			<key>BBLMSpellableRunKinds</key>
+			<array>
+				<string>com.barebones.bblm.comment</string>
+			</array>
+			<key>BBLMNonSpellableRunKinds</key>
+			<array>
+				<string>com.barebones.bblm.code</string>
+				<string>com.barebones.bblm.double-string</string>
+			</array>
+			<key>Identifier and Keyword Character Class</key>
+			<string>^\x00-\x20\x22\x23\x27\x2c\x2e\x5b\x5c\x5d\7b\7d</string>
 		</dict>
 		<dict>
 			<key>BBLMCanGuessLanguage</key>
@@ -154,11 +165,13 @@
 			<key>BBLMCanGenerateHTMLForPreview</key>
 			<false/>
 			<key>BBLMFiltersRunsForSpellChecking</key>
-			<false/>
+			<true/>
 			<key>BBLMSupportsCFStringKeywordLookups</key>
 			<false/>
 			<key>BBLMIsCaseSensitive</key>
 			<true/>
+			<key>BBLMCommentLineDefault</key>
+			<string>#</string>
 			<key>BBLMLanguageCode</key>
 			<string>3DMF</string>
 			<key>BBLMLanguageDisplayName</key>
@@ -287,6 +300,17 @@
 			</array>
 			<key>BBLMUseHTMLFileSearchRules</key>
 			<false/>
+			<key>BBLMSpellableRunKinds</key>
+			<array>
+				<string>com.barebones.bblm.comment</string>
+			</array>
+			<key>BBLMNonSpellableRunKinds</key>
+			<array>
+				<string>com.barebones.bblm.code</string>
+				<string>com.barebones.bblm.double-string</string>
+			</array>
+			<key>Identifier and Keyword Character Class</key>
+			<string>a-zA-Z0-9</string>
 		</dict>
 	</array>
 </dict>

@@ -8,6 +8,9 @@
 #ifndef prefix_h
 #define prefix_h
 
+#import <Cocoa/Cocoa.h>
+
+
 #if DEBUG
 	#define DEBUG_LOG(...)	NSLog(__VA_ARGS__)
 #else

@@ -11,9 +11,6 @@
 
 #include "BBLMTextIterator.h"
 
-#if DEBUG
-#include <cstdio>
-#endif
 
 UInt32	GetLanguageType( BBLMParamBlock &params )
 {
@@ -24,29 +21,23 @@ UInt32	GetLanguageType( BBLMParamBlock &params )
 	if (iter.strcmp("3DMetafile") == 0)
 	{
 		theType = kLanguageType3DMF;
-	#if DEBUG
-		std::printf("Fo3D: language identified as 3DMF\n");
-	#endif
+		DEBUG_LOG(@"Fo3D: language identified as 3DMF");
 	}
 	else if ( (iter.strcmp("#VRML V1.0 ascii") == 0) or
 		(iter.strcmp("#VRML V2.0 utf8") == 0) )
 	{
 		theType = kLanguageTypeVRML;
-	#if DEBUG
-		std::printf("Fo3D: language identified as VRML\n");
-	#endif
+		DEBUG_LOG(@"Fo3D: language identified as VRML");
 	}
 	else if (iter.strcmp("xof ") == 0)
 	{
 		theType = kLanguageTypeDirX;
-	#if DEBUG
-		std::printf("Fo3D: language identified as DirectX\n");
-	#endif
+		DEBUG_LOG(@"Fo3D: language identified as DirectX");
 	}
 	#if DEBUG
 	else
 	{
-		std::printf("Fo3D: language not identified\n");
+		DEBUG_LOG(@"Fo3D: language not identified");
 	}
 	#endif
 	
