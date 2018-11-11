@@ -12,7 +12,6 @@
 
 const UInt32	kLanguageType3DMF	= '3DMF';
 const UInt32	kLanguageTypeVRML	= 'Vrml';
-const UInt32	kLanguageTypeDirX	= 'DirX';
 
 
 UInt32	GetLanguageType( BBLMParamBlock &params );

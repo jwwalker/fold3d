@@ -207,13 +207,6 @@ void	FoldScanner::CheckLanguage()
 			mAllowDoubleSlashComment = false;
 			break;
 
-		case kLanguageTypeDirX:
-			mPairParentheses = false;
-			mPairBraces = true;
-			mPairBrackets = false;
-			mAllowDoubleSlashComment = true;
-			break;
-	
 		default:
 			mPairParentheses = true;
 			mPairBraces = true;

@@ -1,5 +1,5 @@
 /*
- *  FindLanguageType.cpp
+ *  FindLanguageType.mm
  *  Fold3D
  *
  *  Created by James Walker on 11/25/06.
@@ -28,11 +28,6 @@ UInt32	GetLanguageType( BBLMParamBlock &params )
 	{
 		theType = kLanguageTypeVRML;
 		DEBUG_LOG(@"Fo3D: language identified as VRML");
-	}
-	else if (iter.strcmp("xof ") == 0)
-	{
-		theType = kLanguageTypeDirX;
-		DEBUG_LOG(@"Fo3D: language identified as DirectX");
 	}
 	#if DEBUG
 	else
