@@ -1,7 +1,7 @@
 VRML+3DMF Language Module
 =========================
 
-VRML+3DMF is a BBEdit 12 language module for the VRML and 3DMF (text variant) file formats for 3D models.  It provides folding of data blocks, and basic syntax coloring of keywords, comments, and quoted strings.
+VRML+3DMF is a BBEdit 12 language module for the VRML and 3DMF (text variant) file formats for 3D models.  It provides folding of data blocks, and basic syntax coloring of keywords, comments, and quoted strings.  It is written in Objective-C++.  To build it, you will need the [BBEdit Language Module SDK][1].
 
 To install the compiled `VRML+3DMF.bblm` bundle, place it in the folder `~/Library/Application Support/BBEdit/Language Modules`.
 
@@ -26,3 +26,5 @@ The code is provided under the zlib/libpng public license:
 	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 	SOFTWARE.
+
+ [1]: https://github.com/siegel/LanguageModuleSDK
