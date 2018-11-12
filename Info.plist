@@ -7,51 +7,39 @@
 	<key>CFBundleExecutable</key>
 	<string>VRML+3DMF</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.jwwalker.fold3d</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.1</string>
 	<key>CFBundleSignature</key>
 	<string>BBLM</string>
 	<key>CFBundleVersion</key>
 	<string>1.1</string>
-	<key>CFBundleShortVersionString</key>
-	<string>1.1</string>
-	<key>NSHumanReadableCopyright</key>
-	<string>@2006-2018 James W. Walker</string>
 	<key>CSResourcesFileMapped</key>
 	<true/>
+	<key>NSHumanReadableCopyright</key>
+	<string>@2006-2018 James W. Walker</string>
 	<key>com.barebones.bblminfo</key>
 	<array>
 		<dict>
-			<key>BBLMCanGuessLanguage</key>
-			<true/>
 			<key>BBLMCanGenerateHTMLForPreview</key>
 			<false/>
-			<key>BBLMFiltersRunsForSpellChecking</key>
+			<key>BBLMCanGuessLanguage</key>
 			<true/>
-			<key>BBLMSupportsCFStringKeywordLookups</key>
-			<false/>
-			<key>BBLMIsCaseSensitive</key>
+			<key>BBLMColorsSyntax</key>
 			<true/>
 			<key>BBLMCommentLineDefault</key>
 			<string>#</string>
-			<key>BBLMLanguageCode</key>
-			<string>Vrml</string>
-			<key>BBLMLanguageDisplayName</key>
-			<string>VRML</string>
-			<key>BBLMSupportsWordLookup</key>
-			<false/>
 			<key>BBLMEntryPointName</key>
 			<string>FoldMain</string>
-			<key>BBLMScansFunctions</key>
-			<false/>
+			<key>BBLMFiltersRunsForSpellChecking</key>
+			<true/>
 			<key>BBLMFunctionScannerDoesFoldsToo</key>
 			<false/>
-			<key>BBLMScansForFoldRanges</key>
-			<true/>
-			<key>BBLMColorsSyntax</key>
+			<key>BBLMIsCaseSensitive</key>
 			<true/>
 			<key>BBLMKeywordList</key>
 			<array>
@@ -138,6 +126,23 @@
 				<string>WWWAnchor</string>
 				<string>WWWInline</string>
 			</array>
+			<key>BBLMLanguageCode</key>
+			<string>Vrml</string>
+			<key>BBLMLanguageDisplayName</key>
+			<string>VRML</string>
+			<key>BBLMNonSpellableRunKinds</key>
+			<array>
+				<string>com.barebones.bblm.code</string>
+				<string>com.barebones.bblm.double-string</string>
+			</array>
+			<key>BBLMScansForFoldRanges</key>
+			<true/>
+			<key>BBLMScansFunctions</key>
+			<false/>
+			<key>BBLMSpellableRunKinds</key>
+			<array>
+				<string>com.barebones.bblm.comment</string>
+			</array>
 			<key>BBLMSuffixMap</key>
 			<array>
 				<dict>
@@ -145,48 +150,31 @@
 					<string>.wrl</string>
 				</dict>
 			</array>
+			<key>BBLMSupportsCFStringKeywordLookups</key>
+			<false/>
+			<key>BBLMSupportsWordLookup</key>
+			<false/>
 			<key>BBLMUseHTMLFileSearchRules</key>
 			<false/>
-			<key>BBLMSpellableRunKinds</key>
-			<array>
-				<string>com.barebones.bblm.comment</string>
-			</array>
-			<key>BBLMNonSpellableRunKinds</key>
-			<array>
-				<string>com.barebones.bblm.code</string>
-				<string>com.barebones.bblm.double-string</string>
-			</array>
 			<key>Identifier and Keyword Character Class</key>
 			<string>^\x00-\x20\x22\x23\x27\x2c\x2e\x5b\x5c\x5d\7b\7d</string>
 		</dict>
 		<dict>
-			<key>BBLMCanGuessLanguage</key>
-			<true/>
 			<key>BBLMCanGenerateHTMLForPreview</key>
 			<false/>
-			<key>BBLMFiltersRunsForSpellChecking</key>
+			<key>BBLMCanGuessLanguage</key>
 			<true/>
-			<key>BBLMSupportsCFStringKeywordLookups</key>
-			<false/>
-			<key>BBLMIsCaseSensitive</key>
+			<key>BBLMColorsSyntax</key>
 			<true/>
 			<key>BBLMCommentLineDefault</key>
 			<string>#</string>
-			<key>BBLMLanguageCode</key>
-			<string>3DMF</string>
-			<key>BBLMLanguageDisplayName</key>
-			<string>3DMF (text)</string>
-			<key>BBLMSupportsWordLookup</key>
-			<false/>
 			<key>BBLMEntryPointName</key>
 			<string>FoldMain</string>
-			<key>BBLMScansFunctions</key>
-			<false/>
+			<key>BBLMFiltersRunsForSpellChecking</key>
+			<true/>
 			<key>BBLMFunctionScannerDoesFoldsToo</key>
 			<false/>
-			<key>BBLMScansForFoldRanges</key>
-			<true/>
-			<key>BBLMColorsSyntax</key>
+			<key>BBLMIsCaseSensitive</key>
 			<true/>
 			<key>BBLMKeywordList</key>
 			<array>
@@ -291,6 +279,23 @@
 				<string>UnknownText</string>
 				<string>UnknownBinary</string>
 			</array>
+			<key>BBLMLanguageCode</key>
+			<string>3DMF</string>
+			<key>BBLMLanguageDisplayName</key>
+			<string>3DMF (text)</string>
+			<key>BBLMNonSpellableRunKinds</key>
+			<array>
+				<string>com.barebones.bblm.code</string>
+				<string>com.barebones.bblm.double-string</string>
+			</array>
+			<key>BBLMScansForFoldRanges</key>
+			<true/>
+			<key>BBLMScansFunctions</key>
+			<false/>
+			<key>BBLMSpellableRunKinds</key>
+			<array>
+				<string>com.barebones.bblm.comment</string>
+			</array>
 			<key>BBLMSuffixMap</key>
 			<array>
 				<dict>
@@ -298,17 +303,12 @@
 					<string>.3dmf</string>
 				</dict>
 			</array>
+			<key>BBLMSupportsCFStringKeywordLookups</key>
+			<false/>
+			<key>BBLMSupportsWordLookup</key>
+			<false/>
 			<key>BBLMUseHTMLFileSearchRules</key>
 			<false/>
-			<key>BBLMSpellableRunKinds</key>
-			<array>
-				<string>com.barebones.bblm.comment</string>
-			</array>
-			<key>BBLMNonSpellableRunKinds</key>
-			<array>
-				<string>com.barebones.bblm.code</string>
-				<string>com.barebones.bblm.double-string</string>
-			</array>
 			<key>Identifier and Keyword Character Class</key>
 			<string>a-zA-Z0-9</string>
 		</dict>
