@@ -5,9 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
-	<string>Fold3D</string>
-	<key>CFBundleIconFile</key>
-	<string></string>
+	<string>VRML+3DMF</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.jwwalker.fold3d</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -19,7 +17,9 @@
 	<key>CFBundleVersion</key>
 	<string>1.1</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1 ©2006 James W. Walker</string>
+	<string>1.1</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>@2006-2018 James W. Walker</string>
 	<key>CSResourcesFileMapped</key>
 	<true/>
 	<key>com.barebones.bblminfo</key>

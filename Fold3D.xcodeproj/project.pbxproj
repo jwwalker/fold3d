@@ -18,11 +18,9 @@
 
 /* Begin PBXFileReference section */
 		5F05134505A0957400BD0E76 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F05134605A0957400BD0E76 /* Fold3D.bblm */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fold3D.bblm; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F05134605A0957400BD0E76 /* VRML+3DMF.bblm */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VRML+3DMF.bblm"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE3F6D84218E0CF000D285CF /* BBLMInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBLMInterface.h; sourceTree = "<group>"; };
 		BE3F6D85218E0CF000D285CF /* BBLMToken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBLMToken.h; sourceTree = "<group>"; };
-		BE3F6D86218E0CF000D285CF /* BBLMTextUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BBLMTextUtils.mm; sourceTree = "<group>"; };
-		BE3F6D87218E0CF000D285CF /* BBLMTextUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBLMTextUtils.h; sourceTree = "<group>"; };
 		BE3F6D88218E0CF000D285CF /* BBLMTextIterator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBLMTextIterator.h; sourceTree = "<group>"; };
 		BE3F6D89218E326A00D285CF /* ScanForFolds.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ScanForFolds.mm; sourceTree = "<group>"; };
 		BE3F6D8C218E32BE00D285CF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -57,7 +55,7 @@
 				08FB77ADFE841716C02AAC07 /* Source */,
 				2EADE40E056EA22B004A4EFC /* SDK Headers */,
 				5F05134505A0957400BD0E76 /* Info.plist */,
-				5F05134605A0957400BD0E76 /* Fold3D.bblm */,
+				5F05134605A0957400BD0E76 /* VRML+3DMF.bblm */,
 				BE3F6D8B218E32BD00D285CF /* Frameworks */,
 			);
 			name = "Hello World";
@@ -85,8 +83,6 @@
 			children = (
 				BE3F6D84218E0CF000D285CF /* BBLMInterface.h */,
 				BE3F6D88218E0CF000D285CF /* BBLMTextIterator.h */,
-				BE3F6D87218E0CF000D285CF /* BBLMTextUtils.h */,
-				BE3F6D86218E0CF000D285CF /* BBLMTextUtils.mm */,
 				BE3F6D85218E0CF000D285CF /* BBLMToken.h */,
 			);
 			name = "SDK Headers";
@@ -132,7 +128,7 @@
 			name = Fold3D;
 			productInstallPath = "$(HOME)/Library/Bundles";
 			productName = "Hello World";
-			productReference = 5F05134605A0957400BD0E76 /* Fold3D.bblm */;
+			productReference = 5F05134605A0957400BD0E76 /* VRML+3DMF.bblm */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */

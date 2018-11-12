@@ -3,7 +3,7 @@ ARCHS = x86_64
 
 // Build Locations
 SDKROOT = macosx
-SYMROOT = $(SeparateBuilds)/Fold3D
+//SYMROOT = $(SeparateBuilds)/Fold3D
 CONFIGURATION_BUILD_DIR = $(HOME)/Library/Application Support/BBEdit/Language Modules
 
 // Search Paths
@@ -19,7 +19,7 @@ PREBINDING = NO
 ZERO_LINK = NO
 
 // Packaging
-PRODUCT_NAME = Fold3D
+PRODUCT_NAME = VRML+3DMF
 WRAPPER_EXTENSION = bblm
 INFOPLIST_FILE = Info.plist
 
