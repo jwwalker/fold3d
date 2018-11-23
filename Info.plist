@@ -13,11 +13,11 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>CFBundleSignature</key>
 	<string>BBLM</string>
 	<key>CFBundleVersion</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>CSResourcesFileMapped</key>
 	<true/>
 	<key>NSHumanReadableCopyright</key>
@@ -278,6 +278,7 @@
 				<string>ImageClearColor</string>
 				<string>UnknownText</string>
 				<string>UnknownBinary</string>
+				<string>UnknownBinaryType</string>
 			</array>
 			<key>BBLMLanguageCode</key>
 			<string>3DMF</string>
