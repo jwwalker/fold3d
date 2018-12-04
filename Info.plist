@@ -13,11 +13,11 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.2</string>
+	<string>1.2.1</string>
 	<key>CFBundleSignature</key>
 	<string>BBLM</string>
 	<key>CFBundleVersion</key>
-	<string>1.2</string>
+	<string>1.2.1</string>
 	<key>CSResourcesFileMapped</key>
 	<true/>
 	<key>NSHumanReadableCopyright</key>
@@ -187,7 +187,7 @@
 				<string>Unicode</string>
 				<string>Point</string>
 				<string>Line</string>
-				<string>Polyline</string>
+				<string>PolyLine</string>
 				<string>Triangle</string>
 				<string>Polygon</string>
 				<string>GeneralPolygon</string>
@@ -235,6 +235,7 @@
 				<string>SubdivisionStyle</string>
 				<string>OrientationStyle</string>
 				<string>ReceiveShadowsStyle</string>
+				<string>LineWidthStyle</string>
 				<string>PickIDStyle</string>
 				<string>PickPartsStyle</string>
 				<string>Translate</string>
