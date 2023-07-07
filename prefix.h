@@ -29,8 +29,15 @@
 #ifndef prefix_h
 #define prefix_h
 
-#import <Cocoa/Cocoa.h>
 
+#define DEBUG_ASSERT_MESSAGE(componentNameString, assertionString,	\
+	exceptionLabelString, errorString, fileName, lineNumber, value) \
+	os_log( OS_LOG_DEFAULT, "Failed assertion %@: %@ (%d)", \
+	@(assertionString), @(fileName), lineNumber )
+
+
+#import <Cocoa/Cocoa.h>
+#import <os/log.h>
 
 #if DEBUG
 	#define DEBUG_LOG(...)	NSLog(__VA_ARGS__)
