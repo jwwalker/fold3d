@@ -3,8 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 54;
 	objects = {
+
+/* Begin PBXAggregateTarget section */
+		BE9DDB382A574AED006011E8 /* Notarize */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BE9DDB392A574AED006011E8 /* Build configuration list for PBXAggregateTarget "Notarize" */;
+			buildPhases = (
+				BE9DDB3C2A574B12006011E8 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Notarize;
+			productName = Notarize;
+		};
+/* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
 		BE3F6D8A218E326A00D285CF /* ScanForFolds.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE3F6D89218E326A00D285CF /* ScanForFolds.mm */; };
@@ -19,6 +33,7 @@
 /* Begin PBXFileReference section */
 		5F05134505A0957400BD0E76 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F05134605A0957400BD0E76 /* VRML+3DMF.bblm */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VRML+3DMF.bblm"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE3785652A5878AC00C3AE53 /* Notarize.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Notarize.sh; sourceTree = "<group>"; };
 		BE3F6D84218E0CF000D285CF /* BBLMInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBLMInterface.h; sourceTree = "<group>"; };
 		BE3F6D85218E0CF000D285CF /* BBLMToken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBLMToken.h; sourceTree = "<group>"; };
 		BE3F6D88218E0CF000D285CF /* BBLMTextIterator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBLMTextIterator.h; sourceTree = "<group>"; };
@@ -52,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				BEBB348E0B196E05000D1681 /* Fold3D.xcconfig */,
+				BE3785652A5878AC00C3AE53 /* Notarize.sh */,
 				08FB77ADFE841716C02AAC07 /* Source */,
 				2EADE40E056EA22B004A4EFC /* SDK Headers */,
 				5F05134505A0957400BD0E76 /* Info.plist */,
@@ -138,6 +154,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					BE9DDB382A574AED006011E8 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
 			};
 			buildConfigurationList = 2E4F91D10863164B009D6578 /* Build configuration list for PBXProject "Fold3D" */;
 			compatibilityVersion = "Xcode 2.4";
@@ -152,6 +173,7 @@
 			projectRoot = "";
 			targets = (
 				5F05133905A0957400BD0E76 /* Fold3D */,
+				BE9DDB382A574AED006011E8 /* Notarize */,
 			);
 		};
 /* End PBXProject section */
@@ -175,6 +197,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BE9DDB3C2A574B12006011E8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh /Volumes/Work/git-repos/Fold3D/Notarize.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5F05133F05A0957400BD0E76 /* Sources */ = {
@@ -270,6 +313,24 @@
 			};
 			name = Release;
 		};
+		BE9DDB3A2A574AED006011E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FDHC2KMZ6V;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BE9DDB3B2A574AED006011E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FDHC2KMZ6V;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -287,6 +348,15 @@
 			buildConfigurations = (
 				2E4F91D20863164B009D6578 /* Debug */,
 				2E4F91D30863164B009D6578 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BE9DDB392A574AED006011E8 /* Build configuration list for PBXAggregateTarget "Notarize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE9DDB3A2A574AED006011E8 /* Debug */,
+				BE9DDB3B2A574AED006011E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

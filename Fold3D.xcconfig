@@ -3,7 +3,7 @@ ARCHS = $(ARCHS_STANDARD)
 ONLY_ACTIVE_ARCH = NO
 
 // Build Locations
-CONFIGURATION_BUILD_DIR = $(HOME)/Library/Application Support/BBEdit/Language Modules
+//CONFIGURATION_BUILD_DIR = $(HOME)/Library/Application Support/BBEdit/Language Modules
 
 // Search Paths
 HEADER_SEARCH_PATHS = $(inherited) $(BBEdit_SDK)/Interfaces/**
@@ -39,9 +39,11 @@ ENABLE_HARDENED_RUNTIME = YES
 
 // Deployment
 MACOSX_DEPLOYMENT_TARGET = 10.15
-INSTALL_PATH = "$(HOME)/Applications/BBEdit.app/Contents/Language Modules/"
 INSTALL_MODE_FLAG = ug+w,o-w,a+rX
 COPY_PHASE_STRIP = NO
+SKIP_INSTALL = NO
+//INSTALL_PATH = $(HOME)/Library/Application Support/BBEdit/Language Modules
+INSTALL_PATH = @rpath
 
 // Code Generation
 GCC_SYMBOLS_PRIVATE_EXTERN = YES
